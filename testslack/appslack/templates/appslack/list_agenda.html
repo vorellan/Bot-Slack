@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<h1>Agenda</h1>
+
+
+
+<ul>
+    {% for agenda in object_list %}
+        <li>
+            <p>Opcion: {{ agenda.opcion}}</p>
+            <p>Especificacion: {{ agenda.especificacion}}</p>
+            <p>Id Cliente: {{ agenda.id_cliente_id}}</p>
+            <p>Id Menu: {{ agenda.id_menu_id}}</p>
+
+        </li>
+    {% endfor %}
+
+</ul>
+</html>
